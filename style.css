@@ -18,14 +18,21 @@
 }
 
 header {
-    background-color: #214c5f;
-    color: #646464;
+    background-color: #54a4ff;
+    color: #ffffff;
     padding: 20px 10px;
 }
 
 header h1 {
     text-align: left;
     font-size: 25px;
+    font-family: "roboto mono", monospace;
+    color: #ffffff;
+}
+
+header h2 {
+    text-align: left;
+    font-size: 13px;
     font-family: "roboto mono", monospace;
     color: #ffffff;
 }
