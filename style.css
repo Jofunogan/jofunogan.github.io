@@ -1,3 +1,14 @@
+@font-face {
+    font-family: roboto mono;
+    src: url(/fonts/Roboto_Mono/RobotoMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: roboto mono;
+    src: url(/fonts/Roboto_Mono/RobotoMono-Bold.ttf);
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -8,4 +19,12 @@ header {
     background-color: #214c5f;
     color: #646464;
     padding: 20px 0px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 16px;
+    font-family: "roboto mono", monospace;
+    font-weight: 100;
+    color: #ffffff;
 }
