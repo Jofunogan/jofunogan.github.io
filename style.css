@@ -11,9 +11,9 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin: 0; /* Margem do site */
+    padding: 0; /* Espaço interno do conteúdo do site */
+    box-sizing: border-box; /* Define um modelo compacto de espaçamento para todos os elementos */
 }
 
 header {
