@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    background-color: #dff5ff;
+    color: #646464;
+    padding: 20px 0px;
+    text-align: center;
+}
