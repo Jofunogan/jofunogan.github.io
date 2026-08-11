@@ -11,37 +11,51 @@
 }
 
 * {
-    margin: 0; /* Margem do site */
-    padding: 0; /* Espaço interno do conteúdo do site */
-    box-sizing: border-box; /* Define um modelo compacto de espaçamento para todos os elementos */
+    margin: 0; /* Remove a margem externa padrão dos elementos HTML */
+    padding: 0; /* Remove o espaçamento interno padrão dos elementos HTML */
+    box-sizing: border-box; /* Faz width/height incluírem padding e borda dos elementos */
 }
 
 header {
-    background-color: #78c3e3;
-    color: #ffffff;
-    padding: 15px 30px 15px 30px;
+    background-color: #78c3e3; /* Define a cor de fundo do cabeçalho */
+    color: #ffffff; /* Define a cor do texto do cabeçalho */
+    padding: 20px 30px 5px 50px; /* Define o espaçamento interno do cabeçalho */
 }
 
 .header-topo {
+
+    display: flex; /* Define o layout do cabeçalho como flexbox */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    justify-content: space-between; /* Coloca o primeiro e o último item nas extremidades */
+    padding: 0 70px; /* Define 70px de espaçamento interno nas laterais */
+
+}
+
+.header-topo h1 {
+    font-size: 25px; /* Define o tamanho da fonte do título */
+    font-family: "roboto mono", monospace; /* Define a família de fontes do título */
+    background-color: rgb(80, 92, 152); /* Define a cor de fundo do título */
+    padding: 8px 10px; /* Define o espaçamento interno do título */
+    border-radius: 10px; /* Define o arredondamento dos cantos do título */ 
+    color: #eceaff; /* Define a cor do texto do título */
+    margin: 0%;
+}
+
+.subtitulo {
     display: flex;
     align-items: center;
-    gap: 30px;
+    padding: 5px 70px 10px;
 }
 
-header h1 {
-    font-size: 30px;
-    font-family: "roboto mono", monospace;
-    color: #484848;
-}
-
-header h2 {
+.subtitulo h2 {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 15px;
     font-family: "roboto mono", monospace;
-    color: #ffffff;
+    color: #141439;
+    padding: 5px 10px;
 }
 
-.menu {
+nav ul {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -51,7 +65,7 @@ header h2 {
 .submenu {
     display: none;
     position: absolute;
-    background-color: #78c3e3;
+    background-color: #484849;
     padding: 10px;
     border-radius: 5px;
     list-style: none;
