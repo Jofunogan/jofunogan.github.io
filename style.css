@@ -60,17 +60,42 @@ header { /*Cabeçalho do site*/
 }
 
 nav ul {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    list-style: none;
+    /* display é a posição do elemento */
+    display: flex; /* Flex define o layout do cabeçalho como flexbox (Itens lado a lado) */
+
+    /* Alinhar itens do elemento*/
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+
+    /*Gap é o espaçamento*/
+    gap: 60px; /* Espaçamento entre os itens da nevegação */
+
+    /*Estilo da lista (tipo itens de menu)*/
+    list-style: none; /* none significa que não tem marcação ou numeração de lista */
+
 }
 
-.submenu {
+.submenu ul {
     display: none;
     position: absolute;
     background-color: #484849;
     padding: 10px;
     border-radius: 5px;
-    list-style: none;
+
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: roboto mono, monospace;
+    font-weight: 700;
+    
+}
+
+button {
+    border: 0;
+    background: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: roboto mono, monospace;
+    font-weight: 700;
 }
