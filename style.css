@@ -1,16 +1,16 @@
-@font-face {
-    font-family: "roboto mono";
-    src: url(fonts/Roboto_Mono/RobotoMono-Bold.ttf);
-    font-weight: 400;
+@font-face { /* Adiciona uma fonte externa através de um arquivo*/
+    font-family: "roboto mono"; /* Nome da fonte */
+    src: url(fonts/Roboto_Mono/RobotoMono-Bold.ttf); /* Diretorio onde o arquivo está */
+    font-weight: 400; /* Estilo da fonte tipo bold ou bold-italico */
 }
 
-@font-face {
-    font-family: "roboto mono";
-    src: url(fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf);
-    font-weight: 700;
+@font-face { /* Adiciona uma fonte externa através de um arquivo*/
+    font-family: "roboto mono"; /* Nome da fonte */
+    src: url(fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf); /* Diretorio onde o arquivo está */
+    font-weight: 700; /* Estilo da fonte tipo bold ou bold-italico */
 }
 
-* {
+* { /* (*) Aplica elementos e valores css em toda a estrutura do documento html */
     margin: 0; /* Remove a margem externa padrão dos elementos HTML */
     padding: 0; /* Remove o espaçamento interno padrão dos elementos HTML */
     box-sizing: border-box; /* Faz width/height incluírem padding e borda dos elementos */
