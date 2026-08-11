@@ -10,51 +10,53 @@
     font-weight: 700; /* Estilo da fonte tipo bold ou bold-italico */
 }
 
-* { /* (*) Aplica elementos e valores css em toda a estrutura do documento html */
+* { /* (*) Aplica mudanças do css em toda a estrutura do documento html */
     margin: 0; /* Remove a margem externa padrão dos elementos HTML */
     padding: 0; /* Remove o espaçamento interno padrão dos elementos HTML */
     box-sizing: border-box; /* Faz width/height incluírem padding e borda dos elementos */
 }
 
-header {
-    background-color: #78c3e3; /* Define a cor de fundo do cabeçalho */
+header { /*Cabeçalho do site*/
+    background-color: #020202; /* Define a cor de fundo do cabeçalho */
     color: #ffffff; /* Define a cor do texto do cabeçalho */
-    padding: 20px 30px 5px 50px; /* Define o espaçamento interno do cabeçalho */
+    padding: 10px 30px 5px 50px; /* Define o espaçamento interno do cabeçalho */
 }
 
-.header-topo {
+.header-topo { /* Primeira fileira de itens do cabeçalho */
 
-    display: flex; /* Define o layout do cabeçalho como flexbox */
+    /* display é a posição do elemento */
+    display: flex; /* Flex define o layout do cabeçalho como flexbox (Itens lado a lado) */
+
+    /* Alinhar itens do elemento*/
     align-items: center; /* Alinha os itens verticalmente ao centro */
+
+    /*Alinhar itens do elemento horizontalmente*/
     justify-content: space-between; /* Coloca o primeiro e o último item nas extremidades */
-    padding: 0 70px; /* Define 70px de espaçamento interno nas laterais */
+
+    /* Padding é o espaço interno do elemento */
+    padding: 0 70px; /* Define 70px de espaçamento interno nas laterais horizontal e 0 nas verticais */
 
 }
 
 .header-topo h1 {
-    font-size: 25px; /* Define o tamanho da fonte do título */
-    font-weight: 400;
+    font-size: 30px; /* Define o tamanho da fonte do título */
+    font-weight: 400; /* Define qual estilo da fonte usar como bold e bold-italico */
     font-family: "roboto mono", monospace; /* Define a família de fontes do título */
-    background-color: rgb(80, 92, 152); /* Define a cor de fundo do título */
     padding: 8px 10px; /* Define o espaçamento interno do título */
-    border-radius: 10px; /* Define o arredondamento dos cantos do título */ 
     color: #eceaff; /* Define a cor do texto do título */
-    margin: 0%;
 }
 
 .subtitulo {
-    display: flex;
-    align-items: center;
-    padding: 5px 70px 10px;
+    padding-left: 80px;
+    padding-bottom: 10px;
+    padding-top: 3px;
 }
 
 .subtitulo h2 {
-    margin-top: 8px;
     font-size: 15px;
     font-family: "roboto mono", monospace;
     font-weight: 700;
-    color: #141439;
-    padding: 5px 10px;
+    color: #b9b9ff;
 }
 
 nav ul {
