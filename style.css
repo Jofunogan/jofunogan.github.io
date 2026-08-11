@@ -1,13 +1,13 @@
 @font-face {
     font-family: "roboto mono";
-    src: url(fonts/Roboto_Mono/RobotoMono-Regular.ttf);
-    font-weight: 400px;
+    src: url(fonts/Roboto_Mono/RobotoMono-Bold.ttf);
+    font-weight: 400;
 }
 
 @font-face {
     font-family: "roboto mono";
-    src: url(fonts/Roboto_Mono/RobotoMono-Bold.ttf);
-    font-weight: 700px;
+    src: url(fonts/Roboto_Mono/RobotoMono-BoldItalic.ttf);
+    font-weight: 700;
 }
 
 * {
@@ -33,6 +33,7 @@ header {
 
 .header-topo h1 {
     font-size: 25px; /* Define o tamanho da fonte do título */
+    font-weight: 400;
     font-family: "roboto mono", monospace; /* Define a família de fontes do título */
     background-color: rgb(80, 92, 152); /* Define a cor de fundo do título */
     padding: 8px 10px; /* Define o espaçamento interno do título */
@@ -51,6 +52,7 @@ header {
     margin-top: 8px;
     font-size: 15px;
     font-family: "roboto mono", monospace;
+    font-weight: 700;
     color: #141439;
     padding: 5px 10px;
 }
