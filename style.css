@@ -158,7 +158,7 @@ a:hover {
 
 
 
-button {
+header button {
     border: 0;
     background: none;
     color: #000000;
@@ -167,6 +167,6 @@ button {
     font-weight: 700;
 }
 
-button:hover {
+header button:hover {
     color: #ffffff;
 }
