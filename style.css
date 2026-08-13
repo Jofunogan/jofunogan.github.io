@@ -17,9 +17,8 @@
 }
 
 header { /*Cabeçalho do site*/
-    background-color: #020202; /* Define a cor de fundo do cabeçalho */
+    background-color: #1d1d1d; /* Define a cor de fundo do cabeçalho */
     color: #ffffff; /* Define a cor do texto do cabeçalho */
-    padding: 10px 30px 5px 50px; /* Define o espaçamento interno do cabeçalho */
 }
 
 .header-topo { /* Primeira fileira de itens do cabeçalho */
@@ -34,22 +33,22 @@ header { /*Cabeçalho do site*/
     justify-content: space-between; /* Coloca o primeiro e o último item nas extremidades */
 
     /* Padding é o espaço interno do elemento */
-    padding: 0 70px; /* Define 70px de espaçamento interno nas laterais horizontal e 0 nas verticais */
+    padding: 10px 70px; /* Define 70px de espaçamento interno nas laterais horizontal e 0 nas verticais */
+
+    background-color: #b9b9ff;
 
 }
 
 .header-topo h1 {
-    font-size: 30px; /* Define o tamanho da fonte do título */
+    font-size: 40px; /* Define o tamanho da fonte do título */
     font-weight: 400; /* Define qual estilo da fonte usar como bold e bold-italico */
     font-family: "roboto mono", monospace; /* Define a família de fontes do título */
     padding: 8px 10px; /* Define o espaçamento interno do título */
-    color: #eceaff; /* Define a cor do texto do título */
+    color: #000000; /* Define a cor do texto do título */
 }
 
 .subtitulo {
-    padding-left: 80px;
-    padding-bottom: 10px;
-    padding-top: 3px;
+    padding: 10px 80px 10px 80px;
 }
 
 .subtitulo h2 {
@@ -59,7 +58,11 @@ header { /*Cabeçalho do site*/
     color: #b9b9ff;
 }
 
-nav ul {
+nav {
+    position: relative;
+}
+
+nav > ul {
     /* display é a posição do elemento */
     display: flex; /* Flex define o layout do cabeçalho como flexbox (Itens lado a lado) */
 
@@ -77,14 +80,30 @@ nav ul {
 .submenu ul {
     display: none;
     position: absolute;
-    background-color: #484849;
-    padding: 10px;
+
+    left: 0%;
+    width: 100%;
+
+    background-color: #ffffff;
+    padding: 20px 12px;
+    margin: 30px 0;
     border-radius: 5px;
+    border: solid #010101 1px;
+
+    box-sizing: border-box;
+
+    flex-direction:column;
+    gap: 20px;
+
+}
+
+.submenu.aberto ul {
+    display:flex;
 
 }
 
 a {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-family: roboto mono, monospace;
     font-weight: 700;
@@ -94,8 +113,8 @@ a {
 button {
     border: 0;
     background: none;
-    color: #ffffff;
-    font-size: 17px;
+    color: #000000;
+    font-size: 19px;
     font-family: roboto mono, monospace;
     font-weight: 700;
 }
