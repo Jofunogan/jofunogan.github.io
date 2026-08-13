@@ -131,6 +131,33 @@ a {
     
 }
 
+a:hover {
+    color: #ffffff;
+}
+
+.submenu ul li a:hover {
+    color: #7a0eaf;
+}
+
+.submenu ul li a::before {
+    content: "->";
+    display: inline-block;
+    margin-right: 8px;
+    opacity: 0;
+    transform: translateX(-5px);
+    transition: opacity 150ms ease, transform 150ms ease;
+    color: #000;
+}
+
+.submenu ul li a:hover::before {
+    opacity: 1;
+    transform: translateX(0);
+    
+}
+
+
+
+
 button {
     border: 0;
     background: none;
@@ -138,4 +165,8 @@ button {
     font-size: 19px;
     font-family: roboto mono, monospace;
     font-weight: 700;
+}
+
+button:hover {
+    color: #ffffff;
 }
