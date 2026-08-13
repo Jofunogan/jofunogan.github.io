@@ -78,7 +78,6 @@ nav > ul {
 }
 
 .submenu ul {
-    display: none;
     position: absolute;
 
     left: 0;
@@ -95,6 +94,15 @@ nav > ul {
 
     flex-direction: column;
     gap: 0;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+
+    transition:
+        opacity 600ms ease,
+        transform 600ms ease,
+        visibility 600ms ease;
 }
 
 .submenu ul li {
@@ -103,7 +111,11 @@ nav > ul {
 }
 
 .submenu.aberto ul {
-    display:flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+
+    transition: none;
 
 }
 
